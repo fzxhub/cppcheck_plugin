@@ -5,13 +5,13 @@
 
 将misra2012_cn.txt、misra2012_en.txt、misra.json放在自己本地，也可以放入cppcheck的软件目录，这样后续操作可以不带路径
 
-misra.json说明
+misra.json说明，注意--rule-texts路径，换成misra2012_en.txt英文输出
 ```json
 {
     "script": "misra.py",
     "args": 
     [
-        "--rule-texts=./misra2012_cn.txt"   //注意路径，换成misra2012_en.txt英文输出
+        "--rule-texts=./misra2012_cn.txt" 
     ]
 }
 ```
